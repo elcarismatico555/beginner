@@ -1,2 +1,2 @@
 # beginner
-Pruebas de html
+Pruebas de HTML5
