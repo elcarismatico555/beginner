@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <style>
-            body {background-image:url("./imagenes/RE4wE8t.jpg");
+            body {background-color: cadetblue;
             }
             main {
                 margin-left: 20%;
@@ -53,5 +53,87 @@
             <p>texto <sub>subindice</sub> "sub"</p>
             <p>texto <sup>superindice</sup> "sup"</p>
         </aside>
+        <hr>
+        <fieldset><legend> ELEMENTOS DE CITAS EN HTML</legend>
+            <b><p>Cita de la pagina de balzhur usando la etiqueta "blockquote"</p></b>
+            <blockquote cite="https://balzhur.org/">
+                Balzhur es un juego de rol online en modo texto (conocido como MUD), completamente gratuito.
+                Balzhur está ubicado en un grandioso mundo de fantasía y magia,
+                donde podrás desarrollar tus habilidades y enfrentarte a poderosos enemigos.
+            </blockquote>
+            <small>Nota: la etiqueta blockquote para citar, genera una sangria, fijate bien o_o</small>
+            <p>La etiqueta <ins>"q"</ins> se usa para citas cortas</p>
+            <p>La etiqueta "abbr" se usa para abreviaturas como <abbr title="Transmision Control Protocol">TCP</abbr> y se le añade un title para cuando el mouse se posiciona encima </p>
+            <p>La etiqueta "addres" sirve para darle formato a info de contacto</p>
+            <address>
+                Santiago de chile<br>
+                Calle falsa 777<br>
+                correo@gmail.com<br>
+            </address>
+            <p style="margin: 10px;border: 2px solid Tomato;padding: 2px;text-align: center;">La etiqueta <ins>"bdo"</ins> con el atributo dir="rtl" provoca el texto escrito al reves</p>
+        </fieldset>
+        <fieldset><legend>Links en html</legend>
+            <p>El atributo <ins>"target"</ins> para la etiqueta <ins>"a"</ins> se usa para definir el como se abrira el enlace</p>
+            <ul>
+                <li><b>target="_self" :</b> Defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic</li>
+                <li><b>target="blank" :</b> Abre el documento en una nueva ventana o pestaña</li>
+                <li><b>target="_parent" :</b> Abre el documento en el marco principal</li>
+                <li><b>target="_top" :</b> Abre el documento en el cuerpo completo de la ventana</li>
+            </ul>
+            <p>Ejemplo:</p>
+            <p><a href="imagenes/dragon.png" target="_blank">link a imagen de balzhur dentro de la misma pagina</a></p>
+            <p><b>Ejemplo con imagen</b></p>
+            <a href="imagenes/dragon.png" target="_parent"><img src="imagenes/dragon.png" alt="dragon de balzhur xd"></a>
+            <p>
+                Use "mailto:" dentro del href atributo para crear un enlace que abra el programa de correo electrónico del usuario
+                para permitirle enviar un nuevo correo electrónico
+            </p>
+            <p><a href="mailto:benjamin555jedidiah@gmail.com">link para enviarme un correo xd</a></p>
+            <p>
+                Para usar un botón HTML como enlace, debe agregar algún código JavaScript.
+            </p>
+            <button onclick="document.location='./README.md'">link a readme.md</button>
+            <p>El title pero para los enlaces (osea para la etiqueta "a")</p>
+            <a href="./README.md" title="link a readme">archivo readme</a>
+        </fieldset>
+        <fieldset><legend>Colores de enlace html</legend>
+            <pre>
+                Por defecto, aparecerá un enlace como este (en todos los navegadores):
+
+                    Un enlace no visitado está subrayado y azul
+                    Un enlace visitado está subrayado y morado
+                    Un enlace activo está subrayado y rojo.
+                Puede cambiar los colores del estado del enlace usando CSS
+            </pre>
+            <p>EJEMPLO:</p>
+            <pre>
+                "style"
+                    a:link {
+                      color: green;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
+                    
+                    a:visited {
+                      color: pink;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
+                    
+                    a:hover {
+                      color: red;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
+                    
+                    a:active {
+                      color: yellow;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
+                    "style"
+            </pre>
+            <small>NOTA: El hover es cuando esta el cursor encima</small>
+        </fieldset>
     </body>
 </html>
