@@ -15,6 +15,9 @@
                 margin-left: 10px;
                 background-color: lightgray;
             }
+            legend {
+                font-size: 130%;
+            }
         </style>
     </head>
     <title>Pagina de prueba... jeje</title>
@@ -24,7 +27,7 @@
             <a href="https://www.agar.io">agar.io</a>
         </nav>
         <h1 style="text-align:center;color:blue;">Titulo de la pagina centrada</h1>
-        <p style="color:yellow;">Hola como estas... unu</p>
+        <p id="c4" style="color:yellow;">Hola como estas... unu</p>
         <p style="background-color:green;font-size: 150%;">Linea de parrafo con "br"<br>elemento vacio que crea un salto de linea</p>
         <p style="font-family:Arial;">Abajo te dejo un enlace a balzhur y una imagen.... unu</p>
         <main> contenido principal xd</main>
@@ -71,6 +74,7 @@
                 correo@gmail.com<br>
             </address>
             <p style="margin: 10px;border: 2px solid Tomato;padding: 2px;text-align: center;">La etiqueta <ins>"bdo"</ins> con el atributo dir="rtl" provoca el texto escrito al reves</p>
+            <p>Ejemplo: <bdo dir="rtl">texto al reves xd</bdo></p>
         </fieldset>
         <fieldset><legend>Links en html</legend>
             <p>El atributo <ins>"target"</ins> para la etiqueta <ins>"a"</ins> se usa para definir el como se abrira el enlace</p>
@@ -130,9 +134,12 @@
                       background-color: transparent;
                       text-decoration: underline;
                     }
-                    "style"
+                "style"
             </pre>
             <small>NOTA: El hover es cuando esta el cursor encima</small>
+        </fieldset>
+        <fieldset><legend>Links a otra etiqueta dentro de la misma pagina</legend>
+            <p><a href="#c4">Link de salto al primer parrafo</a></p>
         </fieldset>
     </body>
 </html>
