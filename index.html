@@ -5,6 +5,9 @@
         <style>
             body {
                 background-image: url("imagenes/RE4wE8t.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
             }
             main {
                 margin-left: 20%;
@@ -14,10 +17,17 @@
             }
             aside {
                 margin-left: 10px;
-                background-color: lightgray;
+                background-color: lightgray;opacity: 80%;
             }
             legend {
-                font-size: 130%;
+                font-size: 140%;
+                background-color: lightgray;opacity: 80%;
+            }
+            p {
+                background-color: lightgray;opacity: 80%;
+            }
+            pre {
+                background-color: lightgray;opacity:80%;
             }
         </style>
         <script>
@@ -38,8 +48,9 @@
         <p style="font-family:Arial;">Abajo te dejo un enlace a balzhur y una imagen.... unu</p>
         <main> contenido principal xd</main>
         <section>
-            <p><a title="enlace a pagina externa" href="http://www.balzhur.org">balzhur.org</a></p>
-            <img src="imagenes/dragon.png" alt="logo de balzhur" width="400" height="200">
+            <p><a title="enlace a pagina externa" href="http://www.balzhur.org">balzhur.org</a>
+                <img src="imagenes/dragon.png" alt="logo de balzhur" style="width:10%;height:10%;">
+            </p>
             <hr>
         </section>
         <aside>
@@ -65,7 +76,7 @@
         <hr>
         <fieldset><legend> ELEMENTOS DE CITAS EN HTML</legend>
             <b><p>Cita de la pagina de balzhur usando la etiqueta "blockquote"</p></b>
-            <blockquote cite="https://balzhur.org/">
+            <blockquote cite="https://balzhur.org/" style="background-color:lightgray;opacity:80%;">
                 Balzhur es un juego de rol online en modo texto (conocido como MUD), completamente gratuito.
                 Balzhur está ubicado en un grandioso mundo de fantasía y magia,
                 donde podrás desarrollar tus habilidades y enfrentarte a poderosos enemigos.
@@ -84,7 +95,7 @@
         </fieldset>
         <fieldset><legend>Links en html</legend>
             <p>El atributo <ins>"target"</ins> para la etiqueta <ins>"a"</ins> se usa para definir el como se abrira el enlace</p>
-            <ul>
+            <ul style="background-color: lightgray;opacity:80%;">
                 <li><b>target="_self" :</b> Defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic</li>
                 <li><b>target="_blank" :</b> Abre el documento en una nueva ventana o pestaña</li>
                 <li><b>target="_parent" :</b> Abre el documento en el marco principal</li>
@@ -147,7 +158,7 @@
         <fieldset><legend>Links a otra etiqueta dentro de la misma pagina</legend>
             <p><a href="#c4">Link de salto al primer parrafo</a></p>
         </fieldset>
-        <fieldset><legend>Mapa de imagen</legend>
+        <fieldset><legend>Imagenes en html</legend>
             <p>La etiqueta <ins>"map"</ins>sirve para crear una imagen con areas clickeables.</p>
             <p>Cliclkea sobre cada numero para que veas lo qe pasa xd</p>
             <p><img src="./imagenes/numeros-jeje.png" alt="numeros" usemap="#numeros123"></p>
@@ -156,6 +167,17 @@
             <area shape="circle" coords="148,35,20" href="https://google.com/search?&q=numero+2" target="_blank" onclick="myFunction()">
             <area shape="circle" coords="242,35,20" href="https://google.com/search?&q=numero+3" target="_blank" onclick="myFunction()">
             </map>
+            <hr>
+            <p>Imagen de fondo o "background-image"</p>
+            <p>Las especificaciones de la imagen de fondo de esta pagina son:</p>
+            <pre style="background-color:lightgray;opacity:80%;">
+                body {
+                    background-image: url("imagenes/RE4wE8t.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+            </pre>
         </fieldset>
     </body>
 </html>
