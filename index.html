@@ -8,6 +8,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
+                margin: 20px;
             }
             main {
                 margin-left: 20%;
@@ -25,16 +26,14 @@
                 text-transform: uppercase;
                 font-weight: bold;
                 text-align: center;
-            }
-            p {
-                background-color: lightgray;opacity: 80%;
+                box-decoration-break: slice;
             }
             pre {
                 background-color: lightgray;opacity:80%;
             }
             fieldset {
+                background-color: lightgray;opacity: 80%;
                 border-color: cyan;
-                border-radius: 4;
             }
         </style>
         <script>
@@ -58,7 +57,6 @@
             <p><a title="enlace a pagina externa" href="http://www.balzhur.org">balzhur.org</a>
                 <img src="imagenes/dragon.png" alt="logo de balzhur" style="width:10%;height:10%;">
             </p>
-            <hr>
         </section>
         <aside>
             <p>
@@ -80,7 +78,6 @@
             <p>texto <sub>subindice</sub> "sub"</p>
             <p>texto <sup>superindice</sup> "sup"</p>
         </aside>
-        <hr>
         <fieldset><legend> ELEMENTOS DE CITAS EN HTML</legend>
             <b><p>Cita de la pagina de balzhur usando la etiqueta "blockquote"</p></b>
             <blockquote cite="https://balzhur.org/" style="background-color:lightgray;opacity:80%;">
@@ -97,7 +94,7 @@
                 Calle falsa 777<br>
                 correo@gmail.com<br>
             </address>
-            <p style="margin: 10px;border: 2px solid Tomato;padding: 2px;text-align: center;">La etiqueta <ins>"bdo"</ins> con el atributo dir="rtl" provoca el texto escrito al reves</p>
+            <p style="margin: 10px;border: 3px solid Tomato;padding: 2px;text-align: center;">La etiqueta <ins>"bdo"</ins> con el atributo dir="rtl" provoca el texto escrito al reves</p>
             <p>Ejemplo: <bdo dir="rtl">texto al reves xd</bdo></p>
         </fieldset>
         <br>
@@ -192,8 +189,8 @@
         </fieldset>
         <br>
         <fieldset><legend>Seccion de pixel art :)</legend>
-        <img src="./imagenes/entretenimiento2006x2006-R.png" alt="imagen pixel art" style="float:left;width:20%;height:20%;margin:10px;">
-        <img src="./imagenes/velocidad2048x2048-R.png" alt="imagen pixel art" style="float:left;width:20%;height:20%;margin:10px;">
+            <img src="./imagenes/entretenimiento2006x2006-R.png" alt="imagen pixel art" style="float:left;width:20%;height:20%;padding:10px;">
+            <img src="./imagenes/velocidad2048x2048-R.png" alt="imagen pixel art" style="float:left;width:20%;height:20%;margin:10px;">
         </fieldset>
     </body>
 </html>
