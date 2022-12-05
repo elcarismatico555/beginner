@@ -24,12 +24,17 @@
                 background-color: lightgray;opacity: 80%;
                 text-transform: uppercase;
                 font-weight: bold;
+                text-align: center;
             }
             p {
                 background-color: lightgray;opacity: 80%;
             }
             pre {
                 background-color: lightgray;opacity:80%;
+            }
+            fieldset {
+                border-color: cyan;
+                border-radius: 4;
             }
         </style>
         <script>
@@ -38,7 +43,7 @@
             }
         </script>
     </head>
-    <title>Pagina de prueba... jeje</title>
+    <title> Pagina de prueba... jeje</title>
     <body>
         <nav>
             <a href="http://www.balzhur.org">balzhur.org</a>
@@ -95,6 +100,7 @@
             <p style="margin: 10px;border: 2px solid Tomato;padding: 2px;text-align: center;">La etiqueta <ins>"bdo"</ins> con el atributo dir="rtl" provoca el texto escrito al reves</p>
             <p>Ejemplo: <bdo dir="rtl">texto al reves xd</bdo></p>
         </fieldset>
+        <br>
         <fieldset><legend>Links en html</legend>
             <p>El atributo <ins>"target"</ins> para la etiqueta <ins>"a"</ins> se usa para definir el como se abrira el enlace</p>
             <ul style="background-color: lightgray;opacity:80%;">
@@ -119,6 +125,7 @@
             <p>El title pero para los enlaces (osea para la etiqueta "a")</p>
             <a href="./README.md" title="link a readme">archivo readme</a>
         </fieldset>
+        <br>
         <fieldset><legend>Colores de enlace html</legend>
             <pre>
                 Por defecto, aparecerá un enlace como este (en todos los navegadores):
@@ -157,9 +164,11 @@
             </pre>
             <small>NOTA: El hover es cuando esta el cursor encima</small>
         </fieldset>
+        <br>
         <fieldset><legend>Links a otra etiqueta dentro de la misma pagina</legend>
             <p><a href="#c4">Link de salto al primer parrafo</a></p>
         </fieldset>
+        <br>
         <fieldset><legend>Imagenes en html</legend>
             <p>La etiqueta <ins>"map"</ins>sirve para crear una imagen con areas clickeables.</p>
             <p>Cliclkea sobre cada numero para que veas lo qe pasa xd</p>
@@ -172,7 +181,7 @@
             <hr>
             <p>Imagen de fondo o "background-image"</p>
             <p>Las especificaciones de la imagen de fondo de esta pagina son:</p>
-            <pre style="background-color:lightgray;opacity:80%;">
+            <pre>
                 body {
                     background-image: url("imagenes/RE4wE8t.jpg");
                     background-repeat: no-repeat;
@@ -180,6 +189,11 @@
                     background-attachment: fixed;
                 }
             </pre>
+        </fieldset>
+        <br>
+        <fieldset><legend>Seccion de pixel art :)</legend>
+        <img src="./imagenes/entretenimiento2006x2006-R.png" alt="imagen pixel art" width="20%" height="20%" style="float:left;">
+        <img src="./imagenes/velocidad2048x2048-R.png" alt="imagen pixel art" width="20%" height="20%">
         </fieldset>
     </body>
 </html>
