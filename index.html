@@ -19,6 +19,11 @@
                 font-size: 130%;
             }
         </style>
+        <script>
+            function myFunction() {
+                alert("Clickeaste un numero, te llevara a buscar sobre ese numero");
+            }
+        </script>
     </head>
     <title>Pagina de prueba... jeje</title>
     <body>
@@ -143,7 +148,13 @@
         </fieldset>
         <fieldset><legend>Mapa de imagen</legend>
             <p>La etiqueta <ins>"map"</ins>sirve para crear una imagen con areas clickeables.</p>
-            <p><a><img src="/imagenes/numeros-jeje.png" alt="numeros"></a></p>
+            <p>Cliclkea sobre cada numero para que veas lo qe pasa xd</p>
+            <p><img src="./imagenes/numeros-jeje.png" alt="numeros" usemap="#numeros123"></p>
+            <map name="numeros123">
+            <area shape="circle" coords="50,35,20" href="https:/google.com/search?&q=numero+1" target="_blank" onclick="myFunction()">
+            <area shape="circle" coords="148,35,20" href="https://google.com/search?&q=numero+2" target="_blank" onclick="myFunction()">
+            <area shape="circle" coords="242,35,20" href="https://google.com/search?&q=numero+3" target="_blank" onclick="myFunction()">
+            </map>
         </fieldset>
     </body>
 </html>
