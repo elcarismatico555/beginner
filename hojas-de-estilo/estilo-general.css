@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* css document */
+
+title {
+    color: blue;
+}
+
+body {
+    background-image: url("imagenes/RE4wE8t.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 20px;
+}
