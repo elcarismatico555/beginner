@@ -12,3 +12,12 @@ body {
     background-attachment: fixed;
     margin: 20px;
 }
+
+legend {
+    font-size: 140%;
+    background-color: lightgray;opacity: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    box-decoration-break: slice;
+}
