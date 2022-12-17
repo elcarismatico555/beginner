@@ -4,7 +4,6 @@
 title {
     color: blue;
 }
-
 body {
     background-image: url("../imagenes/RE4wE8t.jpg");
     background-repeat: no-repeat;
@@ -12,7 +11,6 @@ body {
     background-attachment: fixed;
     margin: 20px;
 }
-
 legend {
     font-size: 140%;
     background-color: lightgray;opacity: 80%;
@@ -20,4 +18,12 @@ legend {
     font-weight: bold;
     text-align: center;
     box-decoration-break: slice;
+}
+fieldset {
+    background-color: lightgray;opacity: 80%;
+    border-color: cyan;
+}
+img {
+    width: 10%; height: 10%;
+    opacity: none;
 }
