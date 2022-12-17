@@ -50,6 +50,9 @@ table{
     text-align: center;
     border: 1px solid black;
 }
+th{
+    border: solid black;
+}
 tr{
     border: 1px solid black;
 }
