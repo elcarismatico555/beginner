@@ -3,21 +3,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css"  href="./hojas-de-estilo/css.css">
-        <style>
-            main {
-                margin-left: 20%;
-                margin-right: 0%;
-                padding: 5%;
-                background-color: lightgray;
-            }
-            aside {
-                margin-left: 10px;
-                background-color: lightgray;opacity: 80%;
-            }
-            pre {
-                background-color: lightgray;opacity:80%;
-            }
-        </style>
         <script>
             function myFunction() {
                 alert("Clickeaste un numero, te llevara a buscar sobre ese numero");
@@ -25,29 +10,25 @@
         </script>
     </head>
     <title> Pagina de prueba... jeje</title>
-    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <body>
         <nav>
             <a href="./index.html">INICIO</a>
             <a href="./seccion-imagenes.html">IMAGENES</a>
         </nav>
         <header>
-            <h1 style="text-align:center;color:blue;">Titulo de la pagina centrada</h1>
+            <h1>Aprendiendo HTML</h1>
             <p id="c4" style="color:yellow;">Hola como estas... unu</p>
             <p style="background-color:green;font-size: 150%;">Linea de parrafo con "br"<br>elemento vacio que crea un salto de linea</p>
             <p style="font-family:Arial;">Abajo te dejo un enlace a balzhur y una imagen.... unu</p>
             <main> contenido principal xd</main>
         </header>
-        <section>
-            <p><a title="enlace a pagina externa" href="http://www.balzhur.org">balzhur.org</a>
-                <img src="imagenes/dragon.png" alt="logo de balzhur" style="width:10%;height:10%;">
-            </p>
-        </section>
-        <aside>
+        <fieldset><legend>Etiquetas para formatear texto</legend>
             <p>
                 hola
                 hola22
             </p>
+            <p>Justo aqui debajo se usa la etiqueta <b>"pre"</b> que mantiene el formato del texto desde el html</p>
             <pre>
                 hola1
                 hola2
@@ -62,7 +43,8 @@
             <p>texto<ins>insertado</ins> "ins"</p>
             <p>texto <sub>subindice</sub> "sub"</p>
             <p>texto <sup>superindice</sup> "sup"</p>
-        </aside>
+        </fieldset>
+        <section>
         <fieldset><legend> ELEMENTOS DE CITAS EN HTML</legend>
             <b><p>Cita de la pagina de balzhur usando la etiqueta "blockquote"</p></b>
             <blockquote cite="https://balzhur.org/" style="background-color:lightgray;opacity:80%;">
@@ -153,7 +135,7 @@
         <br>
         <fieldset><legend>Imagenes en html</legend>
             <p>La etiqueta <ins>"map"</ins>sirve para crear una imagen con areas clickeables.</p>
-            <p>Cliclkea sobre cada numero para que veas lo qe pasa xd</p>
+            <p>Clikea sobre cada numero para que veas lo qe pasa xd</p>
             <p><img src="./imagenes/numeros-jeje.png" alt="numeros" usemap="#numeros123"></p>
             <map name="numeros123">
             <area shape="circle" coords="50,35,20" href="https:/google.com/search?&q=numero+1" target="_blank" onclick="myFunction()">
@@ -171,6 +153,31 @@
                     background-attachment: fixed;
                 }
             </pre>
+        </fieldset>
+        <fieldset><legend>Tablas en HTML</legend>
+            <table>
+                <caption>Informacion falsa</caption>
+                <tr>
+                    <th>RUT</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                </tr>
+                <tr>
+                    <td>12.234.432-1</td>
+                    <td>Carlitos</td>
+                    <td>Pasaplabra</td>
+                </tr>
+                <tr>
+                    <td>11.222.333-4</td>
+                    <td>Emilio</td>
+                    <td>Te pillamos</td>
+                </tr>
+                <tr>
+                    <td>33.222.111-k</td>
+                    <td>Elba</td>
+                    <td>Lazo</td>
+                </tr>
+            </table>
         </fieldset>
     </body>
 </html>

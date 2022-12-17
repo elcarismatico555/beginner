@@ -1,14 +1,13 @@
 @charset "utf-8";
 /* css document */
-
 title {
     color: blue;
 }
-nav { background-color: lightgray; padding: 1%;
-
+nav {
+    background-color: lightgray; padding: 1%;
 }
-nav a {font-size: 150%; padding: 1%;
-
+nav a {
+    font-size: 150%; padding: 1%;
 }
 h1{
     color: blue; text-align: center;
@@ -26,13 +25,35 @@ legend {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    box-decoration-break: slice;
 }
 fieldset {
     background-color: lightgray;opacity: 80%;
-    border-color: cyan;
+    border-color: greenyellow;
+    margin: 1%;
 }
 img {
-    width: 10%; height: 10%;
+    width: 20%; height: 20%;
     opacity: none;
+}
+main {
+    margin-left: 20%;
+    margin-right: 0%;
+    padding: 5%;
+    background-color: lightgray;
+}
+aside {
+    margin-left: 10px;
+    background-color: lightgray;opacity: 80%;
+}
+pre {
+    background-color: lightgray;opacity:80%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+tr{
+    border: 1px solid black;
 }
