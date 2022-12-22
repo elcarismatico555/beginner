@@ -32,8 +32,10 @@ fieldset {
     margin: 1%;
 }
 img {
-    width: 20%; height: 20%;
-    opacity: none;
+    width: 30%; height: 30%;
+}
+#numeros-clikeables{
+    width: 35%; height: 35%;
 }
 main {
     margin-left: 20%;
