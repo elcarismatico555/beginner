@@ -52,6 +52,6 @@ table{
     text-align: center;
     border: 1px solid black;
 }
-th, tr{
+th, tr, td{
     border: solid black;
 }
