@@ -23,7 +23,7 @@
             <p style="font-family:Arial;">Abajo te dejo un enlace a balzhur y una imagen.... unu</p>
             <main> contenido principal xd</main>
         </header>
-        <fieldset><legend>Etiquetas para formatear texto</legend>
+        <fieldset id="Lugar-1"><legend>Etiquetas para formatear texto</legend>
             <p>
                 hola
                 hola22
@@ -45,8 +45,8 @@
             <p>texto <sup>superindice</sup> "sup"</p>
         </fieldset>
         <section>
-        <fieldset><legend> ELEMENTOS DE CITAS EN HTML</legend>
-            <b><p>Cita de la pagina de balzhur usando la etiqueta "blockquote"</p></b>
+        <fieldset id="Lugar-2"><legend> ELEMENTOS DE CITAS EN HTML</legend>
+            <b><p><h4>Descripcion de la pagina de balzhur usando la etiqueta "blockquote"</h4></p></b>
             <blockquote cite="https://balzhur.org/" style="background-color:lightgray;opacity:80%;">
                 Balzhur es un juego de rol online en modo texto (conocido como MUD), completamente gratuito.
                 Balzhur está ubicado en un grandioso mundo de fantasía y magia,
@@ -65,8 +65,8 @@
             <p>Ejemplo: <bdo dir="rtl">texto al reves xd</bdo></p>
         </fieldset>
         <br>
-        <fieldset><legend>Links en html</legend>
-            <p>El atributo <ins>"target"</ins> para la etiqueta <ins>"a"</ins> se usa para definir el como se abrira el enlace</p>
+        <fieldset id="Lugar-3"><legend>Links en html</legend>
+            <p><h4>El atributo <ins>"target"</ins> para la etiqueta <ins>"a"</ins> se usa para definir el como se abrira el enlace</h4></p>
             <ul style="background-color: lightgray;opacity:80%;">
                 <li><b>target="_self" :</b> Defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic</li>
                 <li><b>target="_blank" :</b> Abre el documento en una nueva ventana o pestaña</li>
@@ -90,7 +90,7 @@
             <a href="./README.md" title="link a readme">archivo readme</a>
         </fieldset>
         <br>
-        <fieldset><legend>Colores de enlace html</legend>
+        <fieldset id="Lugar-4"><legend>Colores de enlace html</legend>
             <pre>
                 Por defecto, aparecerá un enlace como este (en todos los navegadores):
                     Un enlace no visitado está subrayado y azul
@@ -129,12 +129,12 @@
             <small>NOTA: El hover es cuando esta el cursor encima</small>
         </fieldset>
         <br>
-        <fieldset><legend>Links a otra etiqueta dentro de la misma pagina</legend>
+        <fieldset id="Lugar-5"><legend>Links a otra etiqueta dentro de la misma pagina</legend>
             <p><a href="#c4">Link de salto al primer parrafo</a></p>
         </fieldset>
         <br>
         <fieldset><legend>Imagenes en html</legend>
-            <p>La etiqueta <ins>"map"</ins>sirve para crear una imagen con areas clickeables.</p>
+            <h4><p>La etiqueta <ins>"map"</ins>sirve para crear una imagen con areas clickeables.</p></h4>
             <p>Clikea sobre cada numero para que veas lo qe pasa xd</p>
             <p><img id="numeros-clikeables" src="./imagenes/numeros-jeje.png" alt="numeros" usemap="#numeros123"></p>
             <map name="numeros123">
@@ -143,7 +143,7 @@
             <area shape="circle" coords="242,32,25" href="https://google.com/search?&q=numero+3" target="_blank" onclick="myFunction()">
             </map>
             <hr>
-            <p>Imagen de fondo o "background-image"</p>
+            <h4><p>Imagen de fondo o "background-image"</p></h4>
             <p>Las especificaciones de la imagen de fondo de esta pagina son:</p>
             <pre>
                 body {
@@ -154,34 +154,107 @@
                 }
             </pre>
         </fieldset>
-        <fieldset><legend>Tablas en HTML</legend>
+        <fieldset id="Lugar-6"><legend>Tablas en HTML</legend>
             <table>
+                <caption>Informacion falsa</caption>
                 <colgroup>
-                    <col span="2" style="background-color:red">
+                    <col span="3" style="background-color:red"> <!--atributo span="3" especifica cuantas columnas a colorear-->
                     <col style="background-color:yellow">
                 </colgroup>
-                <caption>Informacion falsa</caption>
                 <tr>
                     <th>RUT</th>
                     <th>NOMBRE</th>
                     <th>APELLIDO</th>
+                    <th>EDAD</th>
                 </tr>
                 <tr>
                     <td>12.234.432-1</td>
                     <td>Carlitos</td>
                     <td>Pasaplabra</td>
+                    <td>25</td>
                 </tr>
                 <tr>
                     <td>11.222.333-4</td>
                     <td>Emilio</td>
                     <td>Te pillamos</td>
+                    <td>30</td>
                 </tr>
                 <tr>
                     <td>33.222.111-k</td>
                     <td>Elba</td>
                     <td>Lazo</td>
+                    <td>48</td>
                 </tr>
             </table>
+        </fieldset>
+        <fieldset id="Lugar-7"><legend>Listas en HTML</legend>
+        <h4><p>Lista ordenada con la etiqueta <ins title="order list">"ol"</ins></p></h4>
+        <ol>
+            <li>Articulo x</li>
+            <li>Articulo z</li>
+            <li>Articulo a</li>
+        </ol>
+        <small>list-style-type: upper-roman</small>
+        <hr>
+        <h4><p>Lista desordenada con la etiqueta <ins title="unordered list">"ul"</ins></p></h4>
+        <ul>
+            <li id="liH1">Dispositivo H</li>
+            <li id="liH2">Dispositivo O</li>
+            <li id="liH3">Dispositivo P</li>
+        </ul>
+        <small>list-style-type: square</small>
+        <hr>
+        <h4><p>Lista con descripcion con la etiqueta <ins title="description list">"dl"</ins></p></h4>
+        <dl>
+            <dt>Coffe</dt>
+            <dd>- black hot drink</dd>
+            <dt>Millk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+        <hr>
+        <h4><p>Listas anidadas</p></h4>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea
+              <ol>
+                <li>Black tea</li>
+                <li>Green tea</li>
+              </ol>
+            </li>
+            <li>Milk</li>
+          </ol>
+        </fieldset>
+        <fieldset><legend>El div y el span</legend>
+        <h4>Etiquetas en la linea y de bloque</h4>
+        <p>Hay dos valores de visualización: bloque y en línea
+            Un elemento a nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible
+            Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario
+            El <ins>"div" </ins>elemento es un nivel de bloque y a menudo se usa como contenedor para otros elementos HTML.
+            El <ins>"span" </ins>elemento es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.
+        <br>
+        <br>
+        Ejemplos visuales:
+        </p>
+        <p style="border-width:2px;border-style: solid;">El elemento "p" es un elemento a nivel de bloque.</p>
+        <p>Este es <span style="border-width:2px;border-style:solid;">un elemento "span" dentro</span> de un párrafo.</p>
+        <h4><p>Etiquetas a nivel de bloque:</p></h4>
+        <pre style="font-size: larger;">
+            "address" "article" "aside" "blockquote" "canvas" "dd" "div""dl" "dt" "fieldset"
+
+            "figcaption""figure" "footer" "form" "h1-h6" "header" "hr" "li" "main" "nav"
+            
+            "noscript" "ol" "p" "pre""section" "table" "tfoot" "ul" "video"
+        </pre>
+        <h4><p>Etiquetas a nivel de linea</p></h4>
+        <pre style="font-size: larger;">
+            "a" "abbr" "acronym" "b" "bdo" "big" "br" "button" "cite" "code"
+
+            "dfn" "em" "i" "img" "input" "kbd" "label" "map" "object" "output"
+            
+            "q" "samp" "script" "select" "small" "span" "strong" "sub" "sup"
+
+            "textarea" "time" "tt" "var"
+        </pre>
         </fieldset>
     </body>
 </html>

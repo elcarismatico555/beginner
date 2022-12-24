@@ -9,6 +9,9 @@ nav {
 nav a {
     font-size: 150%; padding: 1%;
 }
+nav a:hover{
+    color: blueviolet;
+}
 h1{
     color: blue; text-align: center;
 }
@@ -32,10 +35,10 @@ fieldset {
     margin: 1%;
 }
 img {
-    width: 30%; height: 30%;
+    width: 20%; height: 20%;
 }
 #numeros-clikeables{
-    width: 35%; height: 35%;
+    width: 22%; height: 22%;
 }
 main {
     margin-left: 20%;
@@ -47,11 +50,26 @@ pre {
     background-color: lightgray;opacity:80%;
 }
 table{
-    border-collapse: collapse;
     width: 100%;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 10px;         /* bordes ovalados */
+    border-spacing: 10px;
 }
 th, tr, td{
-    border: solid black;
+    border: 2px dashed black;
+    border-radius: 10px;
+}
+tr:nth-child(even){    /* even para filas pares y odd para filas impares*/
+    background-color: green;
+}
+tr:hover{
+    /* para cuando el mouse pase por encima*/
+    background-color: aquamarine;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-type: square;
 }
