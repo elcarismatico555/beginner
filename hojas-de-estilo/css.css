@@ -24,13 +24,13 @@ body {
 }
 legend {
     font-size: 140%;
-    background-color: lightgray;opacity: 80%;
+    background-color: lightgray;opacity: 90%;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
 }
 fieldset {
-    background-color: lightgray;opacity: 80%;
+    background-color: lightgray;opacity: 90%;
     border-color: greenyellow;
     margin: 1%;
 }
@@ -72,4 +72,16 @@ ol{
 }
 ul{
     list-style-type: square;
+}
+#lugar-8{
+    background-color: lightgray;
+    opacity: 100;
+}
+#withweb{
+    height: 800px;
+    width: 100%;
+}
+iframe{
+    height: 300px;
+    width: 100%;
 }
