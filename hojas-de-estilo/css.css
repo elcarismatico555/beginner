@@ -73,4 +73,16 @@ ol{
 ul{
     list-style-type: square;
 }
-12345
+#lugar-8{
+    background-color: lightgray;
+    opacity: 100;
+}
+#withweb{
+    height: 800px;
+    width: 100%;
+}
+
+iframe{
+    height: 300px;
+    width: 100%;
+}
